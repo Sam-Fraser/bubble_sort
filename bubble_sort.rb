@@ -13,8 +13,7 @@ def bubble_sort(arr)
   arr.length.times do
     
     arr.each_with_index do |num, idx|
-    if arr[idx+1] == nil
-    elsif arr[idx] > arr[idx+1]
+    if arr[idx+1] != nil && arr[idx] > arr[idx+1]
         arr[idx], arr[idx+1] = arr[idx+1], arr[idx]
       end
     end
